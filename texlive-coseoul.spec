@@ -1,3 +1,9 @@
+# revision 23862
+# category Package
+# catalog-ctan /macros/latex/contrib/coseoul
+# catalog-date 2011-09-06 16:13:05 +0200
+# catalog-license lppl1.3
+# catalog-version 1.1
 Name:		texlive-coseoul
 Version:	1.1
 Release:	1
@@ -43,6 +49,7 @@ are valuable.
 %doc %{_texmfdistdir}/doc/latex/coseoul/coseoul.tex
 %doc %{_texmfdistdir}/doc/latex/coseoul/cosexamp.pdf
 %doc %{_texmfdistdir}/doc/latex/coseoul/cosexamp.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -53,3 +60,5 @@ are valuable.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}

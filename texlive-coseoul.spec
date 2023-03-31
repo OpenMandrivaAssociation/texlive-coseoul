@@ -1,6 +1,6 @@
 Name:		texlive-coseoul
 Version:	23862
-Release:	1
+Release:	2
 Summary:	Context sensitive outline elements
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/coseoul
